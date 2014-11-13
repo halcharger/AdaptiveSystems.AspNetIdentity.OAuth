@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Adaptive Systems</authors>
+    <owners>Adaptive Systems</owners>
+    <projectUrl>https://github.com/halcharger/AdaptiveSystems.AspNetIdentity.OAuth</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <copyright>Copyright 2014</copyright>
+  </metadata>
+</package>
