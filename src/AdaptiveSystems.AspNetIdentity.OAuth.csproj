@@ -30,8 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AdaptiveSystems.AspNetIdentity.AzureTableStorage">
-      <HintPath>..\packages\AdaptiveSystems.AspNetIdentity.AzureTableStorage.1.0.17.0\lib\net45\AdaptiveSystems.AspNetIdentity.AzureTableStorage.dll</HintPath>
+    <Reference Include="AdaptiveSystems.AspNetIdentity.AzureTableStorage, Version=1.0.23.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AdaptiveSystems.AspNetIdentity.AzureTableStorage.1.0.23.0\lib\net45\AdaptiveSystems.AspNetIdentity.AzureTableStorage.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
@@ -90,8 +91,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="NExtensions">
-      <HintPath>..\packages\NExtensions.1.0.29.0\lib\net45\NExtensions.dll</HintPath>
+    <Reference Include="NExtensions, Version=1.0.30.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NExtensions.1.0.30.0\lib\net45\NExtensions.dll</HintPath>
     </Reference>
     <Reference Include="Owin">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
