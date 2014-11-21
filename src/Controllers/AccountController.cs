@@ -299,7 +299,8 @@ namespace AdaptiveSystems.AspNetIdentity.OAuth.Controllers
                 //You can get it from here: https://developers.facebook.com/tools/accesstoken/
                 //More about debug_tokn here: http://stackoverflow.com/questions/16641083/how-does-one-get-the-app-access-token-for-debug-token-inspection-on-facebook
 
-                var appToken = "1556891417855856|JYGY7Y6WLwDEYWxVQPzxA7Qdb14";
+                //var appToken = "1556891417855856|JYGY7Y6WLwDEYWxVQPzxA7Qdb14";
+                var appToken = StartupOptions.FacebookAppTokenAppSettingKey.GetAppSettingValue();
                 verifyTokenEndPoint = string.Format("https://graph.facebook.com/debug_token?input_token={0}&access_token={1}", accessToken, appToken);
             }
             else if (provider == "Google")
