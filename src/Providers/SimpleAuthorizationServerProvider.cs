@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using AdaptiveSystems.AspNetIdentity.AzureTableStorage;
 using AdaptiveSystems.AspNetIdentity.OAuth.Entities;
 using AdaptiveSystems.AspNetIdentity.OAuth.Models;
 using log4net;
@@ -84,9 +85,10 @@ namespace AdaptiveSystems.AspNetIdentity.OAuth.Providers
 
             context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { allowedOrigin });
 
+            User user;
             using (var repo = new OAuthRepository())
             {
-                var user = await repo.FindUser(context.UserName, context.Password);
+                user = await repo.FindUser(context.UserName, context.Password);
 
                 if (user == null)
                 {
@@ -100,6 +102,7 @@ namespace AdaptiveSystems.AspNetIdentity.OAuth.Providers
             identity.AddClaim(new Claim(ClaimTypes.Name, context.UserName));
             identity.AddClaim(new Claim("sub", context.UserName));
             identity.AddClaim(new Claim("role", "user"));
+            identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, user.Id));
 
             var props = new AuthenticationProperties(new Dictionary<string, string>
                 {
