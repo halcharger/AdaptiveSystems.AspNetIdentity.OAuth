@@ -14,7 +14,7 @@ namespace AdaptiveSystems.AspNetIdentity.OAuth
     public static class StartupOptions
     {
         public const string AccessTokenExpiresInMinutesAppSettingKey = "AdaptiveSystems.AspNetIdentity.OAuth.AccessTokenExpiresInMinutes";
-        public const string GoogleClientIdAppSettingKey = "AdaptiveSystems.AsapNetIdentity.OAuth.GoogleClientId";
+        public const string GoogleClientIdAppSettingKey = "AdaptiveSystems.AspNetIdentity.OAuth.GoogleClientId";
         public const string GoogleClientSecretAppSettingKey = "AdaptiveSystems.AspNetIdentity.OAuth.GoogleClientSecret";
         public const string FacebookAppIdAppSettingKey = "AdaptiveSystems.AspNetIdentity.OAuth.FacebookAppId";
         public const string FacebookAppSecretAppSettingKey = "AdaptiveSystems.AspNetIdentity.OAuth.FacebookAppSecret";
