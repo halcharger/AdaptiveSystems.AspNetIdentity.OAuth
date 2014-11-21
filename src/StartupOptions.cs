@@ -83,7 +83,7 @@ namespace AdaptiveSystems.AspNetIdentity.OAuth
         {
             var appSettingValue = ConfigurationManager.AppSettings[AccessTokenExpiresInMinutesAppSettingKey];
             if (!appSettingValue.HasValue())
-                throw new Exception("You have not configured the Access Token Expirary in minutes in the config file. Please add an AppSetting entry with a key of '0' and specify the Access Token Expirary in minutes.".FormatWith(AccessTokenExpiresInMinutesAppSettingKey));
+                throw new Exception("You have not configured the Access Token Expirary in minutes in the config file. Please add an AppSetting entry with a key of '{0}' and specify the Access Token Expirary in minutes.".FormatWith(AccessTokenExpiresInMinutesAppSettingKey));
 
             return TimeSpan.FromMinutes(appSettingValue.ToInteger());
         }
