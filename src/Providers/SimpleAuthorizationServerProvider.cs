@@ -103,6 +103,7 @@ namespace AdaptiveSystems.AspNetIdentity.OAuth.Providers
             identity.AddClaim(new Claim("sub", context.UserName));
             identity.AddClaim(new Claim("role", "user"));
             identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, user.Id));
+            identity.AddClaim(new Claim(ClaimTypes.Email, user.Email));
 
             var props = new AuthenticationProperties(new Dictionary<string, string>
                 {
